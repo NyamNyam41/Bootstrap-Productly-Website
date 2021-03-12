@@ -1,0 +1,116 @@
+h1,
+h2,
+h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300px;
+}
+
+.btn-primary {
+    background: #FF9900;
+    border: 0px;
+    /* padding pad button primary yang ada di hero, 
+    untuk button primary yang ada di navbar itu 
+    udah pakai bawaan bootsrap px py */
+    padding: 15px 40px 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-primary:hover {
+    background: #a18560;
+    border: 0px;
+}
+
+.btn-outline-primary {
+    border-color: #ff9900;
+    padding: 15px 40px 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn-outline-primary:hover {
+    background-color: #a18560;
+    border-color: #a18560;
+}
+
+.fa-play {
+    color: #FF9900;
+    padding-right: 13px;
+}
+
+.hero a+a {
+    color: #FF9900;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    padding: 15px 40px 15px 40px;
+}
+
+.hero a+a:hover {
+    color: #a18560
+}
+
+.fitur {
+    margin-top: 110px;
+    margin-bottom: 160px;
+    background: url("/images/Bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* display: block;
+    position: absolute;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 500px; */
+}
+
+.fitur h5 {
+    font-size: 22px;
+}
+
+.fitur p {
+    font-size: 14px;
+}
+
+.fa-check {
+    color: #FF9900;
+}
+
+@media only screen and (max-width: 992px) {
+    .btn-primary,
+    .btn-outline-primary {
+        margin-top: 10px;
+        margin-left: 0 !important;
+    }
+}
+
+@media (min-width: 360px) and (max-width: 1200px) {
+    .hero p+a {
+        padding: 15px 10px 15px 10px;
+    }
+    .hero a+a {
+        padding: 15px 40px 15px 10px;
+        position: relative;
+        top: 8px;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero p+a {
+        padding: 15px 10px 15px 10px;
+        font-size: 12px;
+    }
+    .hero a+a {
+        padding: 15px 40px 15px 10px;
+        font-size: 12px;
+        position: relative;
+        top: 8px;
+    }
+}
